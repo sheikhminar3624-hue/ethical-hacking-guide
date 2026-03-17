@@ -1,176 +1,38 @@
+
 <!DOCTYPE html>
-<html lang="bn">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cyber Ops Lab</title>
-  <style>
-    :root{
-      --bg:#030805;
-      --bg2:#07110b;
-      --panel:#09150e;
-      --panel2:#0e1e15;
-      --text:#e9fff0;
-      --muted:#96c5a4;
-      --accent:#3cff8f;
-      --accent2:#00c86b;
-      --border:rgba(60,255,143,.18);
-      --shadow:0 10px 30px rgba(0,0,0,.35);
-    }
+  <title>Cyber Lab</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
+<header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="blog.html">Blog</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
 
-    html{
-      scroll-behavior:smooth;
-    }
+<div class="container">
+  <h1>Cyber Ops Lab</h1>
+  <p>Learn Ethical Hacking in a safe way</p>
 
-    body{
-      font-family:Arial, Helvetica, sans-serif;
-      color:var(--text);
-      background:
-        radial-gradient(circle at top, rgba(60,255,143,.07), transparent 25%),
-        linear-gradient(180deg,var(--bg) 0%,var(--bg2) 100%);
-      line-height:1.6;
-      overflow-x:hidden;
-    }
+  <div class="card">
+    <h2>Topics</h2>
+    <ul>
+      <li>Linux</li>
+      <li>Networking</li>
+      <li>Web Security</li>
+      <li>CTF</li>
+    </ul>
+  </div>
+</div>
 
-    a{
-      text-decoration:none;
-      color:inherit;
-    }
+<footer>© 2026 Cyber Lab</footer>
 
-    .container{
-      width:min(1150px, calc(100% - 32px));
-      margin:auto;
-    }
-
-    header{
-      position:sticky;
-      top:0;
-      z-index:1000;
-      background:rgba(3,8,5,.78);
-      backdrop-filter:blur(12px);
-      border-bottom:1px solid var(--border);
-    }
-
-    .nav{
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      gap:16px;
-      padding:14px 0;
-      flex-wrap:wrap;
-    }
-
-    .logo{
-      font-size:1.2rem;
-      font-weight:700;
-      letter-spacing:1px;
-    }
-
-    .logo span{
-      color:var(--accent);
-    }
-
-    .menu{
-      display:flex;
-      gap:18px;
-      flex-wrap:wrap;
-      color:var(--muted);
-      font-size:.95rem;
-    }
-
-    .menu a:hover{
-      color:var(--accent);
-    }
-
-    .hero{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .matrix{
-      position:absolute;
-      inset:0;
-      overflow:hidden;
-      pointer-events:none;
-      opacity:.08;
-    }
-
-    .matrix span{
-      position:absolute;
-      top:-120px;
-      color:var(--accent);
-      font-family:"Courier New", monospace;
-      font-size:.9rem;
-      animation:fall linear infinite;
-      white-space:pre;
-    }
-
-    @keyframes fall{
-      from{ transform:translateY(-120px); }
-      to{ transform:translateY(120vh); }
-    }
-
-    .hero-grid{
-      display:grid;
-      grid-template-columns:1.1fr .9fr;
-      gap:28px;
-      align-items:center;
-      padding:80px 0 50px;
-      position:relative;
-      z-index:2;
-    }
-
-    .badge{
-      display:inline-block;
-      padding:8px 14px;
-      border-radius:999px;
-      border:1px solid var(--border);
-      background:rgba(60,255,143,.08);
-      color:var(--accent);
-      margin-bottom:18px;
-      font-size:.9rem;
-    }
-
-    h1{
-      font-size:clamp(2.2rem, 5vw, 4.5rem);
-      line-height:1.05;
-      margin-bottom:16px;
-      text-transform:uppercase;
-      letter-spacing:1px;
-    }
-
-    .hero p{
-      color:var(--muted);
-      max-width:680px;
-      margin-bottom:24px;
-      font-size:1.05rem;
-    }
-
-    .btn-row{
-      display:flex;
-      gap:14px;
-      flex-wrap:wrap;
-      margin-bottom:20px;
-    }
-
-    .btn{
-      display:inline-block;
-      padding:12px 22px;
-      border-radius:12px;
-      font-weight:700;
-      transition:.2s ease;
-      border:1px solid var(--border);
-    }
-
-    .btn-primary{
-      background:linear-gradient(135deg,var(--accent),var(--accent2));
-     
+<script src="script.js"></script>
+</body>
+</html>
